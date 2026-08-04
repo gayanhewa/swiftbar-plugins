@@ -1,0 +1,17 @@
+# Config for gh-reviews.5m.sh — sourced as bash, so quote your values.
+#
+# Copy to .gh-reviews.config and edit. That file is gitignored.
+#
+# Scope the PR search to specific repos and/or owners.
+# Space-separated. Leave both empty to search every repo you can see.
+#
+# If you set BOTH, GitHub ORs the qualifiers: a PR matches if it is in a
+# listed repo OR owned by a listed owner — so adding an owner widens the
+# results rather than narrowing them. Use one or the other to filter strictly.
+
+REPOS=""
+OWNERS=""
+
+# Examples:
+# REPOS="gayanhewa/workorder-app"
+# OWNERS="PulseLoyalty"
