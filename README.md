@@ -23,6 +23,16 @@ Then symlink or copy the script into your SwiftBar plugin folder, alongside your
 
 `GH_PR_REPOS` / `GH_PR_OWNERS` in the environment override the config file.
 
+### `colima.1m.sh`
+
+Shows Colima VM status per profile in the menu bar (🐳 with a running count).
+Each instance gets start/stop/restart actions in the dropdown. Refreshes every
+minute.
+
+**Dependencies:** [`colima`](https://github.com/abiosoft/colima), [`jq`](https://jqlang.github.io/jq/)
+
+No config. It reads `colima list -j` and acts on whatever profiles exist.
+
 ## Install
 
 Point SwiftBar at this directory as its plugin folder, or symlink individual
