@@ -1,2 +1,3 @@
 .gh-reviews.config
 .DS_Store
+.nix-rebuild.config

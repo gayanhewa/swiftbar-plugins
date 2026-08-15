@@ -1,0 +1,3 @@
+# Space-separated flake directories to scan for darwinConfigurations.
+# ~ is expanded. Copy to .nix-rebuild.config next to the plugin.
+FLAKES="~/Workspace/mydots"

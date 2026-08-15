@@ -33,6 +33,22 @@ minute.
 
 No config. It reads `colima list -j` and acts on whatever profiles exist.
 
+### `nix-rebuild.10m.sh`
+
+Discovers the darwin hosts in your flake(s) via `nix eval` and shows them in
+the menu bar (❄️, with a `*` when a flake repo is dirty). Each host gets
+**Switch** and **Build only** actions that open a terminal, so `sudo` can
+prompt. Shows the current system generation.
+
+**Dependencies:** `nix`, [`jq`](https://jqlang.github.io/jq/), `darwin-rebuild`
+
+Defaults to `~/Workspace/mydots`. To point it elsewhere, drop a
+`.nix-rebuild.config` next to the script:
+
+```sh
+FLAKES="~/Workspace/mydots ~/Workspace/other-flake"
+```
+
 ## Install
 
 Point SwiftBar at this directory as its plugin folder, or symlink individual
