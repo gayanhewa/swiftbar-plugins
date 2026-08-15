@@ -49,6 +49,19 @@ Defaults to `~/Workspace/mydots`. To point it elsewhere, drop a
 FLAKES="~/Workspace/mydots ~/Workspace/other-flake"
 ```
 
+### `claude-usage.5m.sh`
+
+Shows Claude quota in the menu bar (✳️ with the session window's % remaining,
+orange under 25%, red under 10%). The dropdown lists each quota window with
+its reset time and burn pace, then a per-session breakdown of output tokens
+spent inside the current session window, computed from the transcripts in
+`~/.claude/projects/`. Quota data comes from `quota-axi`.
+
+**Dependencies:** `quota-axi`, [`jq`](https://jqlang.github.io/jq/)
+
+**Setup:** run `quota-axi --allow-keychain-prompt` once and approve Keychain
+access so it can read the live quota.
+
 ## Install
 
 Point SwiftBar at this directory as its plugin folder, or symlink individual
